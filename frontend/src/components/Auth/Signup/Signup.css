@@ -1,0 +1,84 @@
+.signupPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vw;
+    width: 100%;
+}
+
+.signUpform{
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.signUpform h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: rgb(225, 27, 27);
+}
+
+.signUpform form{
+    display: flex;
+    flex-direction: column;
+}
+
+.signUpform form label{
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.signUpform input[type="text"],
+.signUpform input[type="email"],
+.signUpform input[type="password"] {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signUpform input[type="text"]:focus,
+.signUpform input[type="email"]:focus,
+.signUpform input[type="password"]:focus {
+    border-color: rgba(252, 163, 17, 0.7);
+    outline: none;
+}
+
+.signupBtn {
+    padding: 0.7rem;
+    background-color: rgba(252, 163, 17, 0.7);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.signupBtn:hover {
+    background-color: rgba(252, 163, 17, 0.8);
+}
+
+.signUpform a {
+    color: rgb(252, 163, 17);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.signUpform a:hover {
+    color: rgba(252, 163, 17, 0.8);
+}
+
+.signUpform div {
+    margin-top: 1rem;
+    text-align: center;
+    color: #333;
+}
+
+@media screen and (max-width:480px) {
+    .signupPage{
+        height: 120vw;
+    }
+}

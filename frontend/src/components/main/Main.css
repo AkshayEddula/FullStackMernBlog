@@ -1,0 +1,236 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px;
+}
+
+.weekBest {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.weekPost {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.weekcon2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.weekcon2 img {
+    max-height: 20vw;
+    height: 16vw;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.weekCon {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.weekCon img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.dateSec2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.dateSec2 p {
+    background-color: #6C757D;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 10px;
+    font-size: 12px;
+    border: 1px solid rgb(52, 58, 64);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.title2 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #6C757D;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid rgb(52, 58, 64);
+    border-radius: 10px;
+    transition: all 0.1s ease;
+}
+
+.title2:hover {
+    transform: scale(1.02);
+}
+
+.title:hover {
+    transform: scale(1.02);
+}
+
+.dateSec {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.dateSec .date {
+    background-color: #6C757D;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 1px solid rgb(52, 58, 64);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.dateSec .tag {
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #6C757D;
+    color: white;
+    border: 1px solid rgb(52, 58, 64);
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.tag {
+    cursor: pointer;
+}
+
+.title {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    background-color: #6C757D;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid rgb(52, 58, 64);
+    border-radius: 10px;
+    transition: all 0.1s ease;
+}
+
+.weekImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.weekArticle h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.title h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+    cursor: pointer;
+}
+
+.weekcon2 h1 {
+    font-size: 24px;
+}
+
+.title2 h1 {
+    font-size: 18px;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .weekBest {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .weekCon img {
+        height: auto;
+    }
+
+    .weekcon2 img {
+        max-height: none;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1200px) {
+    .weekBest {
+        grid-template-columns: 1.5fr 1fr;
+        gap: 2rem;
+    }
+
+    .title h1{
+        font-size: 20px;
+    }
+
+    .title2 h1{
+        font-size: 20px;
+    }
+
+    .weekcon2  img{
+        height: 70vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        padding: 20px 20px;
+    }
+
+    .weekCon img{
+        height: 70vw;
+        object-fit: cover;
+    }
+
+    .weekcon2 img{
+        height: 70vw;
+    }
+
+    .weekArticle h1 {
+        font-size: 32px;
+    }
+
+
+    .weekCon a h1 {
+        font-size: 18px;
+    }
+
+    .weekcon2 a h1 {
+        font-size: 18px;
+    }
+
+    .title {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background-color: #6C757D;
+        color: white;
+        padding: 10px 20px;
+        border: 1px solid rgb(52, 58, 64);
+        border-radius: 10px;
+        transition: all 0.1s ease;
+    }
+
+    .title h1{
+        font-size: 20px;
+    }
+}

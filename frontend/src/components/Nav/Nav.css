@@ -1,0 +1,250 @@
+/* Nav.css */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    z-index: 20;
+}
+
+.nav_logo h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+.nav_logo h1:hover {
+    color: rgb(66, 69, 72);
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+}
+
+.nav_links {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.navBarLinks {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 6px 20px;
+    border-radius: 20px;
+    background-color: rgba(52, 58, 64, 0.4);
+    border: 1px solid rgb(52, 58, 64);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 20;
+}
+
+.nav_links a {
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.navBarLinks a:hover {
+    background-color: rgba(108, 117, 125, 0.5);
+    border-color: rgb(52, 58, 64);
+}
+
+.navbtns {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.navbtns .getbtn {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: rgba(252, 163, 17, 0.7);
+    position: relative;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid rgb(52, 58, 64);
+}
+
+
+
+.signinbtn a {
+    color: rgb(52, 58, 64);
+    transition: all 0.1s ease;
+}
+
+.signinbtn a:hover {
+    color: #000;
+}
+
+.hidden {
+    display: none;
+}
+
+.navbtns .getbtn svg {
+    transform: scale(1.4);
+}
+
+.authUser {
+    background-color: rgba(252, 163, 17, 0.7);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.authLinks {
+    display: flex;
+    gap: 0.3rem;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 15px;
+    top: 50px;
+    left: -60px;
+    border-radius: 10px;
+}
+
+.authLinks a {
+    cursor: pointer;
+}
+
+.authUser svg {
+    transform: scale(1.3);
+}
+
+.categorieMain {
+    position: relative;
+    z-index: 20;
+}
+
+.categoire {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: #fff;
+    left: 0;
+    top: 44px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 30;
+}
+
+.categoire::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    top: -0.6rem;
+    transform: rotate(45deg);
+    left: 2rem;
+    z-index: 30;
+}
+
+.categorieMain:hover .categoire,
+.categoire:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.categoire a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.categoire a:hover {
+    background-color: rgba(108, 117, 125, 0.1);
+}
+
+.open {
+    display: block;
+}
+
+.menu_icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .nav_links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        background-color: rgba(52, 58, 64, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        z-index: 10;
+    }
+
+    .nav_links.open {
+        display: flex;
+    }
+
+    .menu_icon {
+        display: block;
+    }
+
+    .navbtns {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav {
+        padding: 10px 20px;
+    }
+
+    .nav_logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .navBarLinks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav_links {
+        color: white;
+    }
+
+    .navbtns button a {
+        color: white;
+    }
+
+    .authLinks {
+        background-color: rgba(108, 117, 125);
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1200px){
+    .navBar {
+        gap: 0rem;
+    }
+
+    .nav_links {
+        display: flex;
+        gap: 4rem;
+    }
+}

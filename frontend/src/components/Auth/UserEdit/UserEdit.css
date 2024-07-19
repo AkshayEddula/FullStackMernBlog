@@ -1,0 +1,52 @@
+.userEdit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:30px 50px;
+  }
+  
+  .userDetails {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  .userDetails h2 {
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .userDetails input,
+  .userDetails textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .userDetails button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: rgba(252, 163, 17, 0.7);
+    border: 1px solid rgb(52, 58, 64);
+    color: black;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .userDetails button:hover {
+    background-color: rgba(252, 163, 17, 0.8);
+    
+  }
+  
+  .userDetails .error {
+    color: red;
+    margin-top: 1rem;
+  }
+  

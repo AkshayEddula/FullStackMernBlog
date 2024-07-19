@@ -1,0 +1,24 @@
+/* src/Loading.css */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #E9ECEF ;
+  }
+  
+  .rotating-d {
+    font-size: 5rem;
+    font-weight: bold;
+    animation: rotate 2s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

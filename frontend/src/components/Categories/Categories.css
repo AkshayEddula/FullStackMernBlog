@@ -1,0 +1,29 @@
+.categoriesPosts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.categoriesCon{
+    margin-top:3rem ;
+}
+
+.categoriesCon h1{
+    font-size: 32px;
+    font-weight: 600;
+    margin: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width:480px){
+    .categoriesPosts {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width:1200px){
+    .categoriesPosts {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+

@@ -1,0 +1,107 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    gap: 1rem;
+}
+
+.profilename {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 30px;
+}
+
+.profilename img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.profilename button {
+    background-color: rgba(252, 163, 17, 0.7);
+    padding: 20px;
+    border: 1px solid rgb(52, 58, 64);
+    border-radius: 10px;
+}
+
+.profilename h1{
+    font-size: 48px;
+}
+
+.profileDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.profileDetails h2{
+    font-size: 20px;
+}
+
+.profileDetails h1{
+    font-size: 24px;
+    background-color: rgb(52, 58, 64);
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.articles h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.articles_details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.articles_details h2{
+    font-size: 24px;
+}
+
+.articles_details button{
+    background-color: rgba(252, 163, 17, 0.7);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.article_btns {
+    display: flex;
+    gap: 1rem;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .profile{
+        padding: 20px;
+    }
+
+    .profilename{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profileDetails h1{
+        font-size: 20px;
+    }
+
+    .articles_details{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,75 @@
+.categoriePage {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 40px;
+}
+
+.categoriePage h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.categoriePosts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 20px;
+}
+
+.categoriePosts .categoriePost {
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+}
+
+.categoriePosts .categoriePost img {
+    width: 100%;
+    height: 20vw;
+    border-radius: 10px;
+}
+
+.categoriePosts .categoriePost h1 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width:480px) {
+
+    .categoriePage{
+        margin: 20px;
+    }
+
+    .categoriePosts{
+        grid-template-columns: 1fr;
+    }
+
+    .categoriePosts .categoriePost img{
+        height: 60vw;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width:1200px) {
+
+    .categoriePage{
+        margin: 20px;
+    }
+
+    .categoriePosts{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .categoriePosts .categoriePost img{
+        height: 30vw;
+    }
+}

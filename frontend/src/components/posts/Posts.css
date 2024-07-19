@@ -1,0 +1,87 @@
+.posts_form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 150px;
+    gap: 0.5rem;
+}
+
+.posts_label {
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.title_input {
+    padding: 10px;
+    /* border-radius: 5px; */
+    font-size: 20px;
+    border: 1px solid rgb(149, 158, 167);  
+}
+
+.title_input:focus {
+    outline: none;
+    border-color: #212529;
+}
+
+.text_input {
+    padding: 10px;
+    /* border-radius: 5px; */
+    font-size: 20px;
+    border: 1px solid rgb(149, 158, 167);
+    resize: none;
+}
+
+.text_input:focus {
+    outline: none;
+    border-color: #212529;
+}
+
+.submitBtn {
+    padding: 10px;
+    margin: 20px 0;
+    background-color: rgba(252, 163, 17, 0.7);
+    /* border-radius: 5px; */
+    border: 1px solid #212529;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.submitBtn:hover {
+    background-color: rgba(252, 163, 17, 0.8);
+}
+
+.selection{
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 1rem 0;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    border: 1px solid rgb(149, 158, 167);
+}
+
+.selection button{
+    background-color: #212529;
+    color: white;
+    padding: 10px 0;
+}
+
+
+.tags h1{
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:480px) {
+    .posts_form form {
+        padding: 30px;
+    }
+
+    .selection {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
