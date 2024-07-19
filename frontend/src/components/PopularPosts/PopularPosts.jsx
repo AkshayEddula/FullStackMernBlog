@@ -14,7 +14,7 @@ const PopularPosts = () => {
 
   // fetching popular posts
   useEffect(() => {
-    axios.get('http://localhost:5000/')
+    axios.get('https://devspot-zqnb.onrender.com/')
       .then((res) => {
         setPosts(res.data);
       })

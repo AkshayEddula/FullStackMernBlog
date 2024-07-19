@@ -1,6 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { AuthContext } from '../../../Authcontext';
-import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import './Profile.css';
 import instance from '../../../request/instance';
@@ -13,7 +11,7 @@ const Profile = () => {
     // Fetching profile data
     useEffect(() => {
         if (!profileData) {
-            instance.get(`http://localhost:5000/profile/${id}`)
+            instance.get(`https://devspot-zqnb.onrender.com/profile/${id}`)
                 .then((res) => {
                     setProfileData(res.data);
                 })
@@ -30,8 +28,7 @@ const Profile = () => {
         
         if (userConfirmed) {
             try {
-                const response = await instance.delete(`http://localhost:5000/posts/deletepost/${postId}`);
-                console.log(response.data.message);
+                const response = await instance.delete(`https://devspot-zqnb.onrender.com/posts/deletepost/${postId}`);
                 // Update the state to remove the deleted post from the list
                 setProfileData((prevData) => ({
                     ...prevData,

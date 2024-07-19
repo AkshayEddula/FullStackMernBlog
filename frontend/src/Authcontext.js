@@ -13,7 +13,7 @@ const AuthProvider = ({ children }) => {
     useEffect(() => {
         const token = localStorage.getItem('accessToken');
         if (token) {
-            axios.get('http://localhost:5000/verifyToken', {
+            axios.get('https://devspot-zqnb.onrender.com/verifyToken', {
                 headers: { 'Authorization': `Bearer ${token}` }
             })
             .then(res => {
@@ -33,11 +33,10 @@ const AuthProvider = ({ children }) => {
         localStorage.setItem('accessToken', token);
         setIsAuthenticated(true);
         setUser(userData);
-        console.log(userData)
     };
 
     const logout = () => {
-        axios.get('http://localhost:5000/logout')
+        axios.get('https://devspot-zqnb.onrender.com/logout')
             .then(() => {
                 localStorage.removeItem('accessToken');
                 setIsAuthenticated(false);

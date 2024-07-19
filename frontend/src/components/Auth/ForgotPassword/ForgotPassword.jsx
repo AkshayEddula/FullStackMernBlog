@@ -15,7 +15,7 @@ const ForgotPassword = () => {
             return;
         }
 
-        instance.put('http://localhost:5000/forgotpassword', data)
+        instance.put('https://devspot-zqnb.onrender.com/forgotpassword', data)
         .then((res) => {
             console.log(res.data);
             alert("Password changed successfully");

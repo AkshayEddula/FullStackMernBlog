@@ -24,7 +24,7 @@ const Signup = () => {
             return;
         }
 
-        axios.post('http://localhost:5000/signup', userData, {
+        axios.post('https://devspot-zqnb.onrender.com/signup', userData, {
             headers: {
                 'Content-Type': 'application/json'
             }

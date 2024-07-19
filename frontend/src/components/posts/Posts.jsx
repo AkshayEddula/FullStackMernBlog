@@ -37,7 +37,7 @@ const Posts = () => {
   
     postData.authorId = user;
 
-    instance.post('http://localhost:5000/posts/createpost', postData, {
+    instance.post('https://devspot-zqnb.onrender.com/posts/createpost', postData, {
       headers: {
         'Content-Type': 'application/json',
       }

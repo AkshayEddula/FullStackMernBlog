@@ -24,7 +24,7 @@ function App() {
 
   // fetching the posts from server
   useEffect(() => {
-    axios.get('http://localhost:5000/')
+    axios.get('https://devspot-zqnb.onrender.com/')
     .then(response => {
       setPosts(response.data)
     })

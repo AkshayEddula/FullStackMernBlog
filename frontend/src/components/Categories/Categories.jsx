@@ -14,7 +14,7 @@ const Categories = () => {
 
   // Fetching data from backend
   useEffect(() => {
-    axios.get('http://localhost:5000')
+    axios.get('https://devspot-zqnb.onrender.com')
       .then(response => {
         setPosts(response.data);
       })

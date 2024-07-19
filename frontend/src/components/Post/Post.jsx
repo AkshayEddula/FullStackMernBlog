@@ -12,7 +12,7 @@ const Post = () => {
 
   // fetching the each individual post based on the id
   useEffect(() => {
-    axios.get(`http://localhost:5000/posts/${id}`)
+    axios.get(`https://devspot-zqnb.onrender.com/posts/${id}`)
       .then(response => {
         setPost(response.data)
       })

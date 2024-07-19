@@ -22,7 +22,7 @@ const UserEdit = () => {
     }
 
     try {
-      const res = await instance.put(`http://localhost:5000/profile/editprofile/${id}`, userData);
+      const res = await instance.put(`https://devspot-zqnb.onrender.com/profile/editprofile/${id}`, userData);
       console.log("Profile updated successfully", res.data);
       navigate(`/profile/${id}`);
       setProfile(res.data); // Update the profile with the new data
@@ -39,7 +39,7 @@ const UserEdit = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const res = await instance.get(`http://localhost:5000/profile/editprofile/${id}`);
+        const res = await instance.get(`https://devspot-zqnb.onrender.com/profile/editprofile/${id}`);
         setProfile(res.data);
         setUserData({ username: res.data.username, email: res.data.email, bio: res.data.bio });
       } catch (err) {

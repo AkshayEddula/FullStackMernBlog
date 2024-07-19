@@ -25,7 +25,7 @@ const Editpost = () => {
           post.coverImg = editPost.coverImg;
         }
 
-        instance.put(`http://localhost:5000/posts/editpost/${postId.id}`, post)
+        instance.put(`https://devspot-zqnb.onrender.com/posts/editpost/${postId.id}`, post)
         .then((res) => {
           console.log('Post updated successfully');
           navigate(`/posts/${postId.id}`)
@@ -37,7 +37,7 @@ const Editpost = () => {
 
     // geting the post data from the server based on the post id
    useEffect(() => {
-        instance.get(`http://localhost:5000/posts/editpost/${postId.id}`)
+        instance.get(`https://devspot-zqnb.onrender.com/posts/editpost/${postId.id}`)
         .then(res => {
             setEditPost(res.data)
             setPost( {title: res.data.title, body: res.data.body, coverImg: res.data.coverImg, tags: res.data.tags})

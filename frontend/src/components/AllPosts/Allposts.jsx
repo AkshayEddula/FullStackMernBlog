@@ -9,7 +9,7 @@ const Allposts = () => {
 
   // fetching all posts from database
   useEffect(() => {
-    axios.get('http://localhost:5000/posts')
+    axios.get('https://devspot-zqnb.onrender.com/posts')
       .then((response) => {
         setAllPosts(response.data)
       }).catch((error) => { console.log(error) })

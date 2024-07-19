@@ -14,7 +14,7 @@ const CategoriesPosts = () => {
   const [posts, setPosts] = useState();
   
   useEffect(() => {
-    axios.post(`http://localhost:5000/categories/${tag.tags}`)
+    axios.post(`https://devspot-zqnb.onrender.com/categories/${tag.tags}`)
       .then((res) => {
         setPosts(res.data);
       });

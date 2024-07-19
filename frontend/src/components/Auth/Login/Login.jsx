@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 import { useContext } from 'react';
-
 import './Login.css'
 import { AuthContext } from '../../../Authcontext';
 import { useNavigate } from 'react-router-dom';
@@ -10,7 +9,7 @@ const Login = () => {
 
     const [loginData, setLogindata] = useState({ username: '', password: '' })
     const [error,setError] = useState(null)
-    const { login,isAuthenticated } = useContext(AuthContext);
+    const { login } = useContext(AuthContext);
     const navigate = useNavigate();
 
     // form handling and sending data to server
@@ -23,7 +22,7 @@ const Login = () => {
             return;
         }
 
-        axios.post('http://localhost:5000/login', loginData, {
+        axios.post('https://devspot-zqnb.onrender.com/login', loginData, {
             headers: {
                 'Content-Type': 'application/json'
             }
